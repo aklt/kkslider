@@ -62,6 +62,7 @@ do
       nvim.ex.setlocal("nobuflisted")
       nvim.buf_set_keymap(0, "n", "<left>", ":lua require('kkslider.main')['prev-slide']()<cr>", {})
       nvim.buf_set_keymap(0, "n", "<right>", ":lua require('kkslider.main')['next-slide']()<cr>", {})
+      nvim.ex.setlocal("filetype=asciidoctor")
       return nvim.win_get_buf(0)
     end
     v_0_0 = upsert_buf0
